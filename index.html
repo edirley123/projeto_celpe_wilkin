@@ -3,198 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prof. Wilkin Rodrigues - Celpe-bras</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <title>Site Wilkin - Catálogo Oficial</title>
     <style>
-        body { font-family: 'Inter', sans-serif; }
-        .bg-yellow-main { background-color: #FDF000; }
-        .bg-blue-shape { background-color: #1D438A; }
-        .bg-blue-light { background-color: #8EACFF; }
-        .bg-green-section { background-color: #2D8B4E; }
-        .bg-green-card { background-color: #C1FFB1; }
-        .shape-topo { border-radius: 45% 10% 45% 45%; }
-        .shape-footer { border-radius: 160px 160px 0 0; }
-        .hover-scale { transition: transform 0.3s ease; }
-        .hover-scale:hover { transform: scale(1.02); }
+        /* Estilos com foco na cor Verde Wilkin */
+        body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f7f6; }
         
-        /* Estilo para a Modal */
-        #modalForm { display: none; }
+        header { background-color: #28a745; color: white; padding: 25px; text-align: center; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+
+        .container { max-width: 450px; margin: 40px auto; background: white; padding: 30px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+
+        h2 { color: #2e7d32; text-align: center; margin-bottom: 10px; }
+        p.instrucao { text-align: center; color: #666; margin-bottom: 25px; font-size: 14px; }
+
+        .campo { margin-bottom: 15px; }
+        label { display: block; margin-bottom: 5px; font-weight: bold; color: #333; }
+        input { width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 8px; box-sizing: border-box; font-size: 16px; }
+        input:focus { border-color: #28a745; outline: none; box-shadow: 0 0 5px rgba(40, 167, 69, 0.3); }
+
+        .btn-enviar { 
+            width: 100%; 
+            background-color: #28a745; 
+            color: white; 
+            padding: 15px; 
+            border: none; 
+            border-radius: 8px; 
+            font-size: 18px; 
+            font-weight: bold; 
+            cursor: pointer; 
+            transition: 0.3s;
+        }
+        .btn-enviar:hover { background-color: #218838; }
+
+        #mensagem-pos-envio { display: none; text-align: center; padding: 20px; background-color: #d4edda; color: #155724; border-radius: 8px; border: 1px solid #c3e6cb; }
     </style>
 </head>
-<body class="bg-white text-gray-900">
+<body>
 
-    <section class="bg-yellow-main min-h-screen flex flex-col md:flex-row items-center px-8 md:px-24 py-12 overflow-hidden">
-        <div class="md:w-1/2 z-10">
-            <p class="font-bold uppercase tracking-[0.2em] text-sm mb-8 text-gray-800 text-center md:text-left">Prof Wilkin Rodrigues</p>
-            <h1 class="text-5xl md:text-8xl font-bold leading-[1.1] mb-8 text-center md:text-left">Guia completo<br>Celpe-bras</h1>
-            <p class="text-xl mb-10 max-w-md text-gray-800 font-medium text-center md:text-left">Prepare-se com método, prática e mentoria para conquistar sua certificação em português.</p>
-            
-            <div class="flex justify-center md:justify-start">
-                <a href="https://wa.me/5531980164539?text=Olá%20Professor,%20vi%20seu%20site%20e%20tenho%20interesse%20no%20treinamento%20Celpe-bras" 
-                   target="_blank" 
-                   class="bg-white text-black px-10 py-4 rounded-full font-bold shadow-lg hover-scale inline-block text-center">
-                    Começar a aprender (WhatsApp)
-                </a>
-            </div>
-        </div>
-        
-        <div class="md:w-1/2 mt-16 md:mt-0 flex justify-center relative">
-            <div class="bg-blue-shape w-[300px] h-[400px] md:w-[480px] md:h-[600px] shape-topo relative overflow-hidden">
-                <img src="mulher-topo.png" alt="Estudante" class="absolute bottom-0 w-full h-auto object-cover">
-            </div>
-        </div>
-    </section>
+<header>
+    <h1>Site Wilkin</h1>
+</header>
 
-    <section class="bg-blue-light py-20 px-8 md:px-24">
-        <div class="max-w-4xl mx-auto">
-            <h2 class="text-4xl md:text-6xl font-bold mb-8 text-white">Quem sou eu</h2>
-            <div class="space-y-6 text-xl leading-relaxed text-blue-900">
-                <p>Meu nome é <strong>Wilkin Rodrigues</strong>, sou professor de Português para Estrangeiros e trabalho há mais de 3 anos com alunos internacionais, ajudando pessoas de diferentes países a conquistarem fluência, segurança e certificações oficiais em língua portuguesa.</p>
-                <p>Também atuo há 8 anos com ensino e inclusão por meio da Língua de Sinais, o que fortaleceu ainda mais minha didática, empatia e compromisso com a comunicação real e acessível.</p>
-                <p>Sou casado, pai, educador por vocação e acredito que o ensino de idiomas muda trajetórias, abre portas e transforma projetos de vida.</p>
-            </div>
-        </div>
-    </section>
+<div class="container">
+    <div id="conteudo-formulario">
+        <h2>Baixar Catálogo PDF</h2>
+        <p class="instrucao">Preencha os campos abaixo para liberar o download do catálogo Wilkin.</p>
 
-    <section class="bg-green-section py-20 px-8 md:px-24 text-white">
-        <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
-            <div>
-                <h2 class="text-4xl font-bold mb-6">Minha atuação com o CELPE-Bras</h2>
-                <p class="text-lg mb-8 opacity-90">Sou especializado na preparação para o CELPE-Bras, o único certificado oficial de proficiência em português reconhecido pelo Governo do Brasil.</p>
-                <h3 class="text-2xl font-bold mb-4">Trabalho com alunos que desejam:</h3>
-                <ul class="space-y-2 text-lg">
-                    <li>• Estudar no Brasil</li>
-                    <li>• Fazer pós-graduação</li>
-                    <li>• Revalidar diplomas</li>
-                    <li>• Trabalhar legalmente no país</li>
-                    <li>• Obter certificação oficial</li>
-                </ul>
+        <form id="formWilkin" action="https://formspree.io/f/mkozbbed" method="POST">
+            <div class="campo">
+                <label>Nome Completo:</label>
+                <input type="text" name="nome" placeholder="Seu nome" required>
             </div>
-            <div class="bg-white text-green-900 p-8 rounded-[40px] shadow-xl">
-                <h3 class="text-2xl font-bold mb-6">Meu método une:</h3>
-                <ul class="space-y-4 text-lg">
-                    <li>🎯 <strong>Estratégia</strong></li>
-                    <li>🗣️ <strong>Prática real</strong></li>
-                    <li>📝 <strong>Simulados</strong></li>
-                    <li>🔍 <strong>Correções detalhadas</strong></li>
-                    <li>🎤 <strong>Treinamento escrita e oral</strong></li>
-                </ul>
-                <p class="mt-8 font-bold text-center italic">Tudo focado no que realmente cai no exame.</p>
-            </div>
-        </div>
-    </section>
 
-    <section class="bg-blue-light py-20 px-8 md:px-24">
-        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
-            <div class="bg-white/50 p-8 rounded-[40px] border-2 border-white">
-                <h2 class="text-3xl font-bold mb-6 text-blue-900">Material gratuito</h2>
-                <p class="mb-6">Ofereço gratuitamente um guia em PDF para o CELPE-Bras, com:</p>
-                <ul class="space-y-2 mb-8 italic">
-                    <li>• Explicação da prova e estrutura</li>
-                    <li>• Estratégias de leitura e escrita</li>
-                    <li>• Orientações para a parte oral</li>
-                </ul>
-                <button onclick="abrirModal()" class="w-full bg-blue-900 text-white px-8 py-3 rounded-full font-bold block text-center hover:bg-blue-800 transition-colors">
-                    Baixar Guia PDF Grátis
-                </button>
+            <div class="campo">
+                <label>Endereço:</label>
+                <input type="text" name="endereco" placeholder="Cidade e Estado" required>
             </div>
-            <div>
-                <h2 class="text-3xl font-bold mb-6 text-blue-900">Como posso te ajudar</h2>
-                <ul class="space-y-4 text-lg text-blue-900">
-                    <li class="flex items-center gap-2">✅ Aulas individuais ou em grupo</li>
-                    <li class="flex items-center gap-2">✅ Treino para prova oral</li>
-                    <li class="flex items-center gap-2">✅ Simulação de prova escrita</li>
-                    <li class="flex items-center gap-2">✅ Feedback profissional</li>
-                </ul>
-                <p class="mt-8 font-bold text-xl text-white">Minha missão: Tornar o português acessível e estratégico para você viver no Brasil.</p>
-            </div>
-        </div>
-    </section>
 
-    <div id="modalForm" class="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4">
-        <div class="bg-white rounded-[30px] p-8 max-w-md w-full relative">
-            <button onclick="fecharModal()" class="absolute top-4 right-4 text-gray-500 hover:text-black text-2xl">&times;</button>
-            
-            <h2 class="text-2xl font-bold mb-6 text-blue-900">Preencha para baixar o Guia</h2>
-            
-            <form id="downloadForm" onsubmit="enviarFormulario(event)" class="space-y-4">
-                <div>
-                    <label class="block text-sm font-bold mb-1">Nome Completo</label>
-                    <input type="text" id="nome" required class="w-full border rounded-lg px-3 py-2 outline-blue-400">
-                </div>
-                <div>
-                    <label class="block text-sm font-bold mb-1">Endereço</label>
-                    <input type="text" id="endereco" required class="w-full border rounded-lg px-3 py-2 outline-blue-400">
-                </div>
-                <div>
-                    <label class="block text-sm font-bold mb-1">E-mail</label>
-                    <input type="email" id="email" required class="w-full border rounded-lg px-3 py-2 outline-blue-400">
-                </div>
-                <div>
-                    <label class="block text-sm font-bold mb-1">Telefone de Contato</label>
-                    <input type="tel" id="telefone" required class="w-full border rounded-lg px-3 py-2 outline-blue-400" placeholder="(xx) xxxxx-xxxx">
-                </div>
-                
-                <button type="submit" class="w-full bg-green-600 text-white font-bold py-3 rounded-full hover:bg-green-700 transition-all shadow-lg">
-                    Enviar e Baixar Guia PDF
-                </button>
-            </form>
-        </div>
+            <div class="campo">
+                <label>E-mail:</label>
+                <input type="email" name="_replyto" placeholder="exemplo@email.com" required>
+            </div>
+
+            <div class="campo">
+                <label>Telefone / WhatsApp:</label>
+                <input type="tel" name="whatsapp" placeholder="(31) 99999-9999" required>
+            </div>
+
+            <input type="hidden" name="_subject" value="Novo Cadastro - Download Catálogo Wilkin">
+
+            <button type="submit" class="btn-enviar">Enviar e Baixar Catálogo</button>
+        </form>
     </div>
 
-    <footer class="bg-white py-20 px-8 md:px-24 flex flex-col md:flex-row items-center gap-16 border-t">
-        <div class="md:w-1/3">
-            <img src="wilkin-perfil.png" alt="Prof Wilkin Rodrigues" class="shape-footer w-64 md:w-full grayscale hover:grayscale-0 transition-all duration-700">
-        </div>
-        <div class="md:w-2/3">
-            <h2 class="text-4xl md:text-6xl font-bold text-gray-900 leading-[1.1] mb-8">Vamos transformar seu projeto de vida?</h2>
-            <div class="flex flex-col gap-4">
-                <a href="mailto:wilkin.silva@educacao.gov.mg.br" class="text-xl font-bold text-blue-600 hover:underline">
-                    📧 wilkin.silva@educacao.gov.mg.br
-                </a>
-                <a href="https://wa.me/5531980164539" target="_blank" class="bg-green-500 text-white px-10 py-4 rounded-full font-bold shadow-lg text-center md:text-left hover:bg-green-600 transition-all inline-block w-fit">
-                    💬 WhatsApp: (31) 98016-4539
-                </a>
-            </div>
-        </div>
-    </footer>
+    <div id="mensagem-pos-envio">
+        <h3>Obrigado!</h3>
+        <p>Seus dados foram enviados. O download do catálogo Wilkin começará agora.</p>
+    </div>
+</div>
 
-    <script>
-        function abrirModal() {
-            document.getElementById('modalForm').style.display = 'flex';
+<script>
+    const form = document.getElementById('formWilkin');
+    const msgSucesso = document.getElementById('mensagem-pos-envio');
+    const conteudoForm = document.getElementById('conteudo-formulario');
+
+    form.addEventListener('submit', async function(event) {
+        event.preventDefault(); // Impede o recarregamento da página
+        
+        const data = new FormData(form);
+        
+        // Envia os dados via AJAX para o Formspree
+        const response = await fetch(form.action, {
+            method: 'POST',
+            body: data,
+            headers: { 'Accept': 'application/json' }
+        });
+
+        if (response.ok) {
+            // Esconde o formulário e mostra a mensagem
+            conteudoForm.style.display = 'none';
+            msgSucesso.style.display = 'block';
+
+            // Dispara o download do PDF (Certifique-se que o nome do arquivo está correto no GitHub)
+            const link = document.createElement('a');
+            link.href = 'catalogo_wilkin.pdf'; 
+            link.download = 'Catalogo_Site_Wilkin.pdf';
+            link.click();
+        } else {
+            alert('Ops! Ocorreu um problema ao enviar seus dados. Tente novamente.');
         }
-
-        function fecharModal() {
-            document.getElementById('modalForm').style.display = 'none';
-        }
-
-        function enviarFormulario(event) {
-            event.preventDefault();
-            
-            // Aqui você poderia enviar os dados para o seu e-mail ou banco de dados no futuro
-            const dados = {
-                nome: document.getElementById('nome').value,
-                endereco: document.getElementById('endereco').value,
-                email: document.getElementById('email').value,
-                telefone: document.getElementById('telefone').value
-            };
-
-            console.log("Dados capturados:", dados);
-
-            // Inicia o download do arquivo
-            const linkDownload = document.createElement('a');
-            linkDownload.href = 'guia-celpe-bras.pdf'; // Nome do seu arquivo PDF
-            linkDownload.download = 'Guia-Celpe-Bras-Prof-Wilkin.pdf';
-            document.body.appendChild(linkDownload);
-            linkDownload.click();
-            document.body.removeChild(linkDownload);
-
-            // Avisa o usuário e fecha a modal
-            alert("Obrigado, " + dados.nome + "! Seu download começará agora.");
-            fecharModal();
-        }
-    </script>
+    });
+</script>
 
 </body>
 </html>
